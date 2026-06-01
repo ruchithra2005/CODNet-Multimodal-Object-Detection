@@ -28,3 +28,4 @@ CODNet is a multimodal object detection framework designed for vision-language u
 - Real-time deployment optimization
 - Improved caption generation
 - Lightweight edge-device inference
+- Text to Voice Conversion

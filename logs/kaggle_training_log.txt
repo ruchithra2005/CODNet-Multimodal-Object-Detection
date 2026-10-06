@@ -1,0 +1,42 @@
+Kaggle run, Tesla T4, seed 42. Source: Version 2 log (Save & Run All).
+Data: 18,000 train / 2,000 validation images (subset of train2017); final test on val2017 (5,000 images).
+
+all-zeros baseline accuracy (val2017): 96.34 %
+train all-zeros baseline: 96.38 % | valid all-zeros baseline: 96.34 %
+trainable params: 809040
+
+epoch 1: train loss 0.1350 | val mAP 0.249 | val micro-F1 0.269
+epoch 2: train loss 0.0978 | val mAP 0.334 | val micro-F1 0.335
+epoch 3: train loss 0.0876 | val mAP 0.393 | val micro-F1 0.381
+epoch 4: train loss 0.0810 | val mAP 0.447 | val micro-F1 0.453
+epoch 5: train loss 0.0755 | val mAP 0.467 | val micro-F1 0.507
+epoch 6: train loss 0.0712 | val mAP 0.480 | val micro-F1 0.504
+epoch 7: train loss 0.0676 | val mAP 0.496 | val micro-F1 0.523
+epoch 8: train loss 0.0644 | val mAP 0.504 | val micro-F1 0.552
+epoch 9: train loss 0.0614 | val mAP 0.508 | val micro-F1 0.561
+epoch 10: train loss 0.0587 | val mAP 0.515 | val micro-F1 0.567
+
+=== FINAL TEST on val2017 (5,000 images) ===
+mAP: 0.504
+micro-F1 @0.5: 0.560 | macro-F1 @0.5: 0.424
+per-label accuracy (old metric): 97.43% | all-zeros baseline: 96.34%
+
+Best 5 classes:
+         class       AP  n_images
+        person 0.964972      2693
+       giraffe 0.939865       101
+         zebra 0.925704        85
+      elephant 0.877552        89
+ tennis racket 0.868706       167
+
+Worst 5 classes:
+         class       AP  n_images
+         donut 0.162127        62
+ parking meter 0.136905        37
+      scissors 0.123104        28
+       toaster 0.094703         8
+    hair drier 0.011464         9
+
+Worst image: /kaggle/input/coco-2017-dataset/coco2017/val2017/000000190236.jpg
+true: ['backpack', 'sports ball', 'bottle', 'cup', 'chair', 'potted plant', 'tv', 'laptop', 'mouse', 'keyboard', 'book', 'vase']
+pred: ['person', 'bottle', 'cup', 'oven', 'sink', 'refrigerator']
